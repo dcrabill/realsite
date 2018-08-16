@@ -1,0 +1,61 @@
+#slider {
+    height: 500px;
+
+    .item {
+        background-size: cover;
+        height: 500px;
+        position: relative;
+        width: 100%;
+    }
+
+    .item-inner {
+        background-color: rgba(#B3E5FC, .15);
+        height: 100%;
+        left: 0px;
+        position: relative;
+        top: 0px;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        @extend .container;
+        left: 50%;
+        text-align: left;
+        transform: translateX(-50%);
+
+        h1 {
+            font-weight: bold;
+        }
+
+        h2 {
+            margin: 0px 0px 20px 0px;
+            font-weight: bold;
+        }
+    }
+
+    .carousel-control {
+        background-image: none;
+        width: 10%;
+
+        i {
+            font-size: 40px;
+            position: absolute;
+            text-shadow: none;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: color .15s linear;
+        }
+
+        &.left {
+            i {
+                left: 40px;
+            }
+        }
+
+        &.right {
+            i {
+                right: 40px;
+            }
+        }
+    }
+}

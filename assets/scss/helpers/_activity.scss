@@ -1,0 +1,113 @@
+.activity {
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        @extend .clearfix;
+        background-color: #fff;
+        border: 1px solid map-get($grey, 200);
+        margin: 0px 0px 9px 0px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .fa {
+        background-color: map-get($color-primary, 400);
+        color: #fff;
+        font-size: 18px;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        width: 52px;
+    }
+
+    .icon {
+        float: left;
+        position: relative;
+        vertical-align: top;
+
+        &:after {
+            border: 5px solid transparent;
+            border-left-color: map-get($color-primary, 400);
+            content: '';
+            display: block;
+            height: 0px;
+            position: absolute;
+            right: -9px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0px;
+        }
+
+        &.orange {
+            &:after {
+                border-left-color: map-get($orange, 400);
+            }
+
+            .fa {
+                background-color: map-get($orange, 400);
+            }
+        }
+
+        &.cyan {
+            &:after {
+                border-left-color: map-get($cyan, 400);
+            }
+
+            .fa {
+                background-color: map-get($cyan, 400);
+            }
+        }
+
+        &.teal {
+            &:after {
+                border-left-color: map-get($teal, 400);
+            }
+
+            .fa {
+                background-color: map-get($teal, 400);
+            }
+        }
+
+        &.red {
+            &:after {
+                border-left-color: map-get($red, 400);
+            }
+
+            .fa {
+                background-color: map-get($red, 400);
+            }
+        }
+
+        &.brown {
+            &:after {
+                border-left-color: map-get($brown, 400);
+            }
+
+            .fa {
+                background-color: map-get($brown, 400);
+            }
+        }
+
+        &.green {
+            &:after {
+                border-left-color: map-get($green, 400);
+            }
+
+            .fa {
+                background-color: map-get($green, 400);
+            }
+        }
+    }
+
+    .content {
+        color: map-get($grey, 800);
+        display: table-cell;
+        padding: 13px;
+    }
+}

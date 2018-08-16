@@ -1,0 +1,29 @@
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    > li {
+        color: map-get($color-primary, 50);
+        font-size: 12px;
+        margin: 0px;
+
+        a {
+            color: map-get($color-primary, 50);
+
+            &:hover {
+                color: map-get($color-primary, 50);
+                text-decoration: none;
+            }
+        }
+
+        &.active {
+            color: map-get($color-primary, 50);
+        }
+
+        &:before {
+            color: map-get($color-primary, 600) !important;
+        }
+    }
+}

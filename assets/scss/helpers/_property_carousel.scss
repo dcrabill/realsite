@@ -1,0 +1,45 @@
+.property-carousel-wrapper {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 100);
+    margin: 0px 0px 30px 0px;
+    padding: 16px 50px;
+}
+
+.property-carousel {
+    @media (max-width: $screen-xs-max) {
+        width: 250px;
+
+        .property-simple-image {
+            min-height: 60px;
+        }
+    }
+
+    .owl-item {
+        overflow: hidden;
+        width: 0px;
+    }
+
+    .owl-prev, .owl-next {
+        color: map-get($color-secondary, 400);
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .owl-prev {
+        left: -30px;
+    }
+
+    .owl-next {
+        right: -30px;
+    }
+}
+
+.property-carousel-item {
+    padding: 0px 10px;
+
+    > div {
+        margin-bottom: 0px;
+    }
+}

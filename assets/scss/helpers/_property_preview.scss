@@ -1,0 +1,86 @@
+.property-preview {
+    margin-bottom: 30px;
+
+    &.active {
+        outline: 2px solid map-get($color-secondary, 400);
+    }
+
+    &:hover {
+        .property-preview-content {
+            background-color: map-get($color-secondary, 400);
+
+            h2 a, h3 a, .property-preview-action-secondary {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.property-preview-image {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+.property-preview-content {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    padding: 16px;
+    position: relative;
+    transition: background-color .15s linear;
+
+    .active & {
+        box-shadow: none;
+    }
+
+    h2, h3 {
+        color: map-get($grey, 700);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1;
+        margin: 0px;
+        padding: 0px;
+
+        a {
+            color: map-get($grey, 700);
+            transition: background-color .15s linear;
+        }
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+}
+
+.property-preview-action {
+    background-color: rgba(black, .1);
+    color: rgba(white, .7);
+    cursor: pointer;
+    font-size: 11px;
+    height: 19px;
+    right: 10px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    transition: background-color .15s linear, color .15s linear;
+    width: 19px;
+
+    &:hover {
+        background-color: rgba(black, .25);
+        color: rgba(white, .85);
+    }
+}
+
+.property-preview-action-secondary {
+    color: map-get($color-secondary, 500);
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    right: 16px;
+    text-transform: uppercase;
+    top: 13px;
+    transition: background-color .15s linear;
+}

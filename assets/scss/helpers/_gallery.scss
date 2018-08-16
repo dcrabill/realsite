@@ -1,0 +1,20 @@
+.gallery-item {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 200);
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.gallery-image {
+    img {
+        width: 100%;
+    }
+}
+
+.gallery-caption {
+    color: map-get($grey, 600);
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 6px;
+}

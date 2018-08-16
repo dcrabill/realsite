@@ -1,0 +1,93 @@
+.widget {
+    margin-bottom: 15px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    .menu {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        a {
+            border-bottom: 1px solid map-get($grey, 100);
+            color: map-get($grey, 600);
+            display: block;
+            font-size: 15px;
+            line-height: 40px;
+
+            &:hover {
+                color: map-get($grey, 700);
+                text-decoration: none;
+
+                &:before {
+                    content: '\f111';
+                }
+            }
+
+            &:before {
+                color: map-get($color-secondary, 400);
+                content: '\f10c';
+                font-family: 'FontAwesome';
+                font-size: 9px;
+                margin: 0px 8px 0px 0px;
+                vertical-align: middle;
+            }
+        }
+
+        li {
+            margin: 0px;
+            
+            &:last-child {
+                a {
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.widget-title {
+    border-bottom: 1px solid rgba(black, .12);
+    margin: 0px 0px 30px 0px;
+
+    h2 {
+        color: rgba(black, .5);
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 60px;
+        margin: 0px;
+    }
+}
+
+.widget-content {
+    @extend .clearfix;
+
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+
+    .widget-simple & {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    .widget-primary & {
+        background-color: map-get($color-primary, 500);
+
+        .form-control {
+            box-shadow: 0px 2px 0px map-get($color-primary, 200);
+            color: #fff;
+
+            &:active, &:focus {
+                box-shadow: 0px 2px 0px #fff;
+            }
+
+            @include input-placeholder {
+                color: #fff;
+            }
+        }
+    }
+}

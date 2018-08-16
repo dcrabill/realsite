@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: map-get($grey, 50);
+    color: #212121;
+    font-size: 13px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    height: 100%;
+    line-height: 24px;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+
+    .action {
+        color: map-get($color-secondary, 500);
+        font-size: 12px;
+        font-weight: 500;
+        float: right;
+        margin-top: 6px;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+h1.page-header {
+    border-bottom: 1px solid rgba(black, .12);
+    color: rgba(black, .7);
+    font-size: 28px;
+    line-height: 60px;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+}
+
+a {
+    color: map-get($color-secondary, 400);
+}
+
+hr {
+    border-top: 1px solid rgba(black, .06);
+}
+
+blockquote {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 100);
+    color: map-get($grey, 800);
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 16px 16px 16px 80px;
+    position: relative;
+
+    &:before {
+        color: map-get($color-secondary, 400);
+        content: '\f10e';
+        display: block;
+        font-family: 'FontAwesome';
+        font-size: 45px;
+        left: 16px;
+        position: absolute;
+        top: 25px;
+    }
+}
+
+ol {
+    color: map-get($grey, 700);
+    list-style-position: inside;
+    padding: 0px;
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+ul {
+    color: map-get($grey, 700);
+    list-style-position: inside;
+    padding: 0px;
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+#map-contact {
+    height: 300px;
+}
+
+.page-wrapper {
+    display: table;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main {
+    display: table-row;
+
+    a {
+        transition: color .15s linear;
+    }
+}
+
+.custom-space {
+    background-color: map-get($color-secondary, 500);
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.custom-space-caption {
+    background-color: map-get($color-secondary, 600);
+    font-size: 12px;
+    padding: 2px 16px;
+}
+
+.custom-space-inner {
+    margin: 0px 0px 30px 0px;
+    padding: 16px;
+
+    h1 {
+        margin: 0px 0px 10px 0px;
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,36 @@
+.module {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 200);
+    margin-bottom: 30px;
+    display: table;
+    width: 100%;
+}
+
+.module-info {
+    background-color: map-get($grey, 50);
+    display: table-cell;
+    font-size: 12px;
+    padding: 16px;
+    text-transform: uppercase;
+
+    .fa {
+        color: map-get($grey, 700);
+        font-size: 18px;
+        vertical-align: middle;
+    }
+}
+
+.module-content {
+    display: table-cell;
+    padding: 16px;
+
+    strong {
+        color: map-get($color-secondary, 400);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    span {
+        font-weight: 600;
+    }
+}

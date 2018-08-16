@@ -1,0 +1,55 @@
+@mixin placeholder($icon_code, $font_size) {
+    color: rgba(#000, .2);
+    content: $icon_code;
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: $font_size + px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+
+    .footer & {
+        color: map-get($color-primary, 400);
+    }
+}
+
+@mixin input-placeholder {
+    &::-webkit-input-placeholder {@content}
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}
+}
+
+@mixin image_hover {
+    display: block;
+    position: relative;
+
+    &:after {
+        background-color: black;
+        background-image: url('../img/magnifier.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 32px 32px;
+        content: '';
+        display: table-cell;
+        height: 100%;
+        left: 0px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        top: 0px;
+        transition: opacity .15s linear;
+        vertical-align: middle;
+        width: 100%;
+        z-index: 3;
+    }
+
+    &:hover {
+        &:after {
+            opacity: .5;
+        }
+    }
+}

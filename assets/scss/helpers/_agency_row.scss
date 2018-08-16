@@ -1,0 +1,97 @@
+.agency-row {
+    background-color: map-get($grey, 100);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-xs-max) {
+        background-color: #fff;
+    }
+
+    .row {
+        display: table;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+
+        > div {
+            display: table-cell;
+            float: none;
+            vertical-align: middle;
+
+            @media (max-width: $screen-xs-max) {
+                display: block;
+            }
+        }
+    }
+}
+
+.agency-row-image {
+    background-color: #fff;
+    padding: 16px;
+    text-align: center; 
+}
+
+.agency-row-image-inner {
+    a {
+        background-color: rgba(black, .15);
+        display: block;
+        height: 0px;
+        padding-bottom: 100%;
+        position: relative;
+
+        &:before {
+            @include placeholder('\f0f2', 50);
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%), translateY(-50%);
+        }
+    }
+}
+
+.agency-row-content {
+    background-color: #fff;
+
+    p {
+        color: map-get($grey, 700);
+    }
+}
+
+.agency-row-title {
+    a {
+        color: map-get($grey, 800);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.agency-row-subtitle {
+    color: map-get($grey, 700);
+    font-size: 15px;
+}
+
+.agency-row-info {
+    padding: 16px;
+
+    ul {
+        color: map-get($grey, 800);
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        .fa {
+            color: map-get($grey, 700);
+            margin: 0px 5px 0px 0px;
+        }
+
+        a {
+            color: map-get($color-secondary, 400);
+        }
+
+        li {
+            margin: 0px;
+        }
+    }
+}

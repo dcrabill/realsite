@@ -1,0 +1,146 @@
+.property-row {
+    @extend .clearfix;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+}
+
+.property-row-image {
+    @include image_hover;
+    background-color: rgba(black, .15);
+    display: block;
+    float: left;
+    height: 195px;
+    width: 262px;
+
+    &:before {
+        @include placeholder('\f015', 40);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        float: none;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.property-row-body {
+    color: map-get($grey, 700);
+}
+
+.property-row-content {
+    float: left;
+    margin-left: 30px;
+    min-height: 195px;
+    position: relative;
+    width: 525px;
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        width: 375px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        float: none;
+        margin-left: 0px;
+        padding: 0px 15px;
+        width: 100%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        float: none;
+        margin-left: 0px;
+        padding: 0px 15px;
+        width: 100%;
+    }
+}
+
+.property-row-title {
+    color: map-get($color-black, 800);
+    margin-bottom: 0px;
+
+    a {
+        color: map-get($color-black, 800);
+    }
+}
+
+.property-row-location {
+    border-bottom: 1px solid rgba(black, .08);
+    display: block;
+    list-style: none;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
+
+    li {
+        display: inline;
+
+        a {
+            color: #9E9E9E;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.property-row-meta {
+    @extend .clearfix;
+
+    background-color: map-get($grey, 100);
+    border-top: 1px solid map-get($grey, 300);
+    bottom: 0px;
+    left: -30px;
+    position: absolute;
+    right: -30px;
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        bottom: -22px;
+        left: -30px;
+        margin-left: 15px;
+        margin-right: -45px;
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        bottom: -22px;
+        left: -30px;
+        margin-left: 15px;
+        margin-right: -45px;
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+}
+
+.property-row-meta-item {
+    border-right: 1px solid map-get($grey, 300);
+    float: left;
+    font-size: 12px;
+    padding: 6px 20px;
+
+    span {
+        margin: 0px 5px 0px 0px;
+    }
+
+    strong {
+        font-weight: 500;
+    }
+
+    &:last-child {
+        border-right: 0px;
+    }
+}

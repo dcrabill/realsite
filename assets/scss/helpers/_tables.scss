@@ -1,0 +1,46 @@
+.table:not(.table-simple) thead {
+    th {
+        background-color: map-get($color-primary, 400);
+        border-color: transparent !important;
+        color: #fff;
+    }
+}
+
+.table-striped > tbody > tr:nth-child(odd) {
+    background-color: map-get($grey, 100);
+}
+
+.table-simple {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 200);
+    padding: 16px;
+
+    thead {
+        th {
+            border-bottom: 2px solid map-get($grey, 200) !important;
+        }
+    }
+
+    tbody {
+        color: map-get($grey, 700);
+
+        td {
+            border-top: 1px solid map-get($grey, 200) !important;
+            padding: 9px 12px;
+            vertical-align: middle !important;
+        }
+    }
+}
+
+.table {
+    @media (max-width: $screen-xs-max) {
+        th, td {
+            display: block;
+            width: 100% !important;
+
+            &:empty {
+                display: none;
+            }
+        }
+    }
+}

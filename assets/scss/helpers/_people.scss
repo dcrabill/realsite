@@ -1,0 +1,47 @@
+.man {
+    @extend .clearfix;
+
+    background-color: #fff;
+    border: 1px solid map-get($grey, 200);
+    margin-bottom: 30px;
+    padding: 16px;
+}
+
+.man-image {
+    border: 4px solid map-get($grey, 300);
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+
+    img {
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.man-content {
+    display: table-cell;
+    padding-left: 20px;
+
+    h2 {
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;
+    }
+
+    h3 {
+        color: map-get($grey, 500);
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0px;
+    }
+
+    ul {
+        font-size: 12px;
+        list-style: none;
+        line-height: 20px;
+        margin: 12px 0px 0px 0px;
+        padding: 0px;
+    }
+}

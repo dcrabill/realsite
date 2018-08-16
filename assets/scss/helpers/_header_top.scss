@@ -1,0 +1,48 @@
+.header-top {
+    @extend .clearfix;
+    margin: 20px 0px 30px 0px;
+
+    ul {
+        float: right;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            margin: 0px 0px 0px 30px;
+
+            a {
+                color: map-get($color-primary, 300);
+                font-weight: 500;
+                padding: 0px;
+                transition: color .15s linear;
+
+                &:hover {
+                    background-color: transparent;
+                    color: map-get($color-primary, 100);
+                }
+
+                &:active, &:focus {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .social {        
+        margin-left: 30px;
+        margin-top: 2px;
+
+        li {
+            margin: 0px 8px;
+
+            i {
+                font-size: 16px;
+                margin: 0px 2px;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}

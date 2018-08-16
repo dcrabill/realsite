@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,latin-ext">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/nvd3/nv.d3.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libraries/OwlCarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/realsite-admin.css">
+
+    <title>    Agencies
+ | Admin | Realsite</title>
+</head>
+
+<body class="    open hide-secondary-sidebar
+">
+    <div class="admin-wrapper">
+        <div class="admin-navigation">
+    <div class="admin-navigation-inner">
+        <nav>
+            <ul class="menu">
+                <li class="avatar">
+                    <a href="admin-agencies.html#">
+                        <img src="assets/img/tmp/agents/female.jpg" alt="">
+
+                        <span class="avatar-content">
+                            <span class="avatar-title">Lisa Peterson</span>
+                            <span class="avatar-subtitle">Project Manager</span>
+                        </span><!-- /.avatar-content -->
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="admin-dashboard.html"><strong><i class="fa fa-dashboard"></i></strong> <span>Dashboard</span></a>
+                </li>
+
+                <li class="">
+                    <a href="admin-properties.html"><strong><i class="fa fa-building"></i></strong> <span>Properties</span></a>
+                </li>
+
+                <li class="">
+                    <a href="admin-property-browser.html"><strong><i class="fa fa-th-list"></i></strong> <span>Property Browser</span></a>
+                </li>
+
+                <li class=" active ">
+                    <a href="admin-agencies.html"><strong><i class="fa fa-briefcase"></i></strong> <span>Agencies</span></a>
+                </li>
+
+                <li class="">
+                    <a href="admin-gallery.html"><strong><i class="fa fa-file"></i></strong> <span>Media Files</span></a>
+                </li>
+
+                <li class="">
+                    <a href="admin-map.html"><strong><i class="fa fa-globe"></i></strong> <span>Google Map</span></a>
+                </li>
+
+                <li class="">
+                    <a href="admin-people.html"><strong><i class="fa fa-users"></i></strong> <span>People</span></a>
+                </li>
+
+                <li class="">
+                    <a href="admin-property-add.html"><strong><i class="fa fa-pencil"></i></strong> <span>Add Property</span></a>
+                </li>
+
+                <li>
+                    <a href="admin-login.html"><strong><i class="fa fa-sign-out"></i></strong> <span>Logout</span></a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="projects">
+            <h2>Projects</h2>
+
+            <ul>
+                <li class="orange"><a href="admin-agencies.html#">Web Analytics</a></li>
+                <li class="green"><a href="admin-agencies.html#">Custom Development</a></li>
+                <li class="lime"><a href="admin-agencies.html#">Property Filtering</a></li>
+                <li class="deep-orange"><a href="admin-agencies.html#">Social Marketing</a></li>
+                <li class="yellow"><a href="admin-agencies.html#">Agents Management</a></li>
+            </ul>
+        </div><!-- /.projects -->
+        <div class="layer"></div>
+    </div><!-- /.admin-navigation-inner -->
+</div><!-- /.admin-navigation -->
+
+        <div class="admin-content">
+            <div class="admin-content-inner">
+                <div class="admin-content-header">
+                    <div class="admin-content-header-inner">
+                        <div class="container-fluid">
+                            <div class="admin-content-header-logo">
+                                <a href="index.html">
+                                    Realsite
+                                </a>
+                            </div><!-- /admin-content-header-logo -->
+
+                            <div class="admin-content-header-menu">
+                                <ul class="admin-content-header-menu-inner collapse">
+                                    <li><a href="admin-agencies.html#">Documentation</a></li>
+                                    <li><a href="admin-agencies.html#">FAQ</a></li>
+                                    <li><a href="admin-agencies.html#">Support</a></li>
+                                    <li><a href="admin-login.html">Logout</a></li>
+                                </ul>
+
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".admin-content-header-menu-inner">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div><!-- /.admin-content-header-menu  -->
+                        </div><!-- /.container-fluid -->
+                    </div><!-- /.admin-content-header-inner -->
+                </div><!-- /.admin-content-header -->
+
+                <div class="admin-content-main">
+                    <div class="admin-content-main-inner">
+                        <div class="container-fluid">
+                            <h1 class="page-header">Agencies</h1>
+
+<table class="table table-simple">
+    <thead>
+        <tr>
+            <th class="min-width nowrap"></th>
+            <th class="min-width nowrap semi-bold">ID</th>
+            <th class="min-width nowrap semi-bold">Photo</th>
+            <th>Title</th>
+            <th>Phone</th>
+            <th>Plan</th>
+            <th>Date</th>
+            <th class="min-width nowrap"></th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                        <tr>
+                <td class="min-width nowrap"><input type="checkbox"></td>
+                <td>#123</td>
+                <td>
+                    <img src="assets/img/partners/logo1.png" alt="" width="70">
+                </td>
+                <td><a href="admin-agencies.html#">Effective Real Estate</a></td>
+                <td>+0123-456-789</td>
+                <td>Bronze</td>
+                <td>11/20/2015</td>
+                <td class="min-width nowrap"><a href="admin-agencies.html#" class="btn-standard">Edit</a> <a href="admin-agencies.html#" class="btn-alert">Delete</a></td>
+            </tr>
+                    </tbody>
+    </table>
+
+    <div class="center">
+    <ul class="pagination">
+        <li><a href="admin-agencies.html#"><span aria-hidden="true">«</span><span class="sr-only">Previous</span></a></li>
+        <li><a href="admin-agencies.html#">1</a></li>
+        <li><a href="admin-agencies.html#">2</a></li>
+        <li class="active"><a href="admin-agencies.html#">3</a></li>
+        <li><a href="admin-agencies.html#">4</a></li>
+        <li><a href="admin-agencies.html#">5</a></li>
+        <li><a href="admin-agencies.html#"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
+    </ul>
+</div><!-- /.center -->
+                            </div><!-- /.container-fluid -->
+                    </div><!-- /.admin-content-main-inner -->
+                </div><!-- /.container-fluid -->
+
+                <div class="admin-content-footer">
+                    <div class="admin-content-footer-inner">
+                        <div class="container-fluid">
+                            <div class="admin-content-footer-left">
+                                &copy; 2015 Realsite - Material Real Estate Template. All rights reserved.
+                            </div><!-- /.admin-content-footer-left -->
+
+                            <div class="admin-content-footer-right">
+                                Created by <a href="http://byaviators.com">Aviators</a>
+                            </div><!-- /.admin-content-footer-right -->
+                        </div><!-- /.container-fluid -->
+                    </div><!-- /.admin-content-footer-inner -->
+                </div><!-- /.admin-content-footer -->
+
+            </div><!-- /.admin-content-main-inner -->
+        </div><!-- /.admin-content -->
+    </div><!-- /.admin-landing-wrapper -->
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/libraries/jquery-transit/jquery.transit.js"></script>
+
+    <script type="text/javascript" src="assets/libraries/bootstrap/assets/javascripts/bootstrap/transition.js"></script>
+    <script type="text/javascript" src="assets/libraries/bootstrap/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script type="text/javascript" src="assets/libraries/bootstrap/assets/javascripts/bootstrap/collapse.js"></script>
+    <script type="text/javascript" src="assets/libraries/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="assets/libraries/bootstrap-fileinput/js/fileinput.min.js"></script>
+
+    <script type="text/javascript" src="assets/libraries/autosize/jquery.autosize.js"></script>
+    <script type="text/javascript" src="assets/libraries/isotope/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/libraries/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/libraries/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;sensor=false" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/libraries/jquery-google-map/infobox.js"></script>
+    <script type="text/javascript" src="assets/libraries/jquery-google-map/markerclusterer.js"></script>
+    <script type="text/javascript" src="assets/libraries/jquery-google-map/jquery-google-map.js"></script>
+
+    <script type="text/javascript" src="assets/libraries/nvd3/lib/d3.v3.js"></script>
+    <script type="text/javascript" src="assets/libraries/nvd3/nv.d3.min.js"></script>
+    <script type="text/javascript" src="assets/libraries/nvd3/examples/stream_layers.js"></script>
+
+    <script type="text/javascript" src="assets/js/realsite-admin.js"></script>
+    <script type="text/javascript" src="assets/js/map.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39841036-7', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

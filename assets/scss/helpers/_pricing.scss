@@ -1,0 +1,65 @@
+.pricing-col {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 100);
+    margin-bottom: 30px;
+
+    &.popular {
+        outline: 5px solid map-get($color-secondary, 400);
+    }
+}
+
+.pricing-header {
+    background-color: #fff;
+    color: #fff;
+    padding: 16px 16px 38px 16px;
+    text-align: center;
+}
+
+.pricing-title {
+    color: map-get($grey, 500);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pricing-value {
+    color: map-get($grey, 800);
+    font-size: 48px;
+    margin: 30px 0px;
+}
+
+.pricing-duration {
+    color: map-get($grey, 500);
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.pricing-content {
+    background-color: map-get($grey, 200);
+    padding: 16px;
+
+    .btn {
+        display: block;
+        font-weight: 600;
+        margin: 0px 0px 16px 0px;
+        padding: 10px 12px;
+        text-align: center;
+    }
+
+    ul {
+        list-style-position: inside;
+        margin: 0px -16px;
+        padding: 0px 30px;
+
+        li {
+            color: map-get($grey, 700);
+            font-size: 14px;
+            padding: 7px 0px;
+
+            &:last-child {
+                border-bottom: 0px;
+                padding-bottom: 0px;
+            }
+        }
+    }
+}

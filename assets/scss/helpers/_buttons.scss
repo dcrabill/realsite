@@ -1,0 +1,160 @@
+.btn:not(.dropdown-toggle) {
+    background-color: map-get($color-secondary, 500);
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(black, 0.26);
+    color: #fff;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    transition: all .15s linear;
+
+    &:hover {
+        box-shadow: 0 4px 7px 0 rgba(black, .3);
+        color: #fff;
+
+        .fa {
+            opacity: .9;
+        }
+
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &:active, &:focus {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        color: #fff;
+        outline: 0px !important;
+    }
+
+    // &:before {
+    //     background-color: rgba(black, .05);
+    //     border-radius: 2px;
+    //     bottom: 0px;
+    //     left: 0px;
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     top: 0px;
+    //     transition: width .2s linear;
+    //     width: 0px;
+    //     z-index: 0;
+    // }
+
+    small {
+        display: block;
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+    .fa {
+        font-size: 14px;
+        margin-right: 10px;
+        opacity: .7;
+        transition: opacity .15s linear;
+    }
+}
+
+.btn-secondary {
+    @extend .btn;
+    background-color: map-get($color-primary, 600) !important;
+}
+
+button.btn {
+    color: #fff;
+}
+
+.btn-simple {
+    color: map-get($color-secondary, 400);
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: map-get($color-secondary, 400);
+        text-decoration: none;
+    }
+}
+
+.btn-xl {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 28px;
+}
+
+.btn-standard {
+    color: map-get($grey, 800);
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0px 8px;
+
+    &:hover {
+        color: map-get($grey, 800) !important;
+        text-decoration: none;
+    }
+}
+
+.btn-alert {
+    @extend .btn-standard;
+    color: map-get($red, 400);
+
+    &:hover {
+        color: map-get($red, 400) !important;
+    }
+}
+
+.btn-file, .fileinput-remove, .fileinput-upload-button {
+    border-color: transparent;
+    box-shadow: none !important;
+    padding: 9px 12px;
+    &:active, &:focus, &:hover {
+        border-color: transparent;
+    }
+}
+
+.ink {
+  display: block;
+  position: absolute;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-transform:scale(0);
+     -moz-transform:scale(0);
+       -o-transform:scale(0);
+          transform:scale(0);
+}
+
+.animate {
+    -webkit-animation:ripple 0.65s linear;
+   -moz-animation:ripple 0.65s linear;
+    -ms-animation:ripple 0.65s linear;
+     -o-animation:ripple 0.65s linear;
+        animation:ripple 0.65s linear;
+}
+
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 0; 
+        -webkit-transform: scale(2.5); 
+    }
+}
+
+@-moz-keyframes ripple {
+    100% {
+        opacity: 0; 
+        -moz-transform: scale(2.5); 
+    }
+}
+
+@-o-keyframes ripple {
+    100% {
+        opacity: 0; 
+        -o-transform: scale(2.5); 
+    }
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0; 
+        transform: scale(2.5); 
+    }
+}

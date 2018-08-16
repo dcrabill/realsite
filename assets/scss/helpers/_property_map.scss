@@ -1,0 +1,10 @@
+.map-property {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 100);
+    margin-bottom: 30px;
+    padding: 16px;
+}
+
+#map-property {
+    height: 300px;
+}

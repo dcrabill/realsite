@@ -1,0 +1,72 @@
+.agent-medium {
+    @extend .clearfix;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+    padding: 16px;
+}
+
+.agent-medium-image {
+    background-color: rgba(black, .15);
+    border-radius: 50%;
+    display: block;
+    float: left;
+    height: 120px;
+    position: relative;
+    width: 120px;
+
+    &:before {
+        @include placeholder('\f007', 40);
+    }
+
+    img {
+        border-radius: 50%;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.agent-medium-content {
+    color: map-get($grey, 700);
+    margin: 0px 0px 0px 140px;
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        .fa {
+            margin: 0px 5px 0px 0px;
+        }
+
+        li {
+            margin: 0px;
+        }
+    }
+
+    a {
+        color: map-get($color-secondary, 400);
+    }
+
+    hr {
+        margin: 10px 0px;
+    }
+}
+
+.agent-medium-title {
+    margin: 0px;
+
+    a {
+        color: map-get($grey, 800);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.agent-medium-subtitle {
+    color: map-get($grey, 700);
+    font-size: 13px;
+}

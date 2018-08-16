@@ -1,0 +1,66 @@
+.property-simple-wrapper {
+    margin-bottom: -30px;
+}
+
+.property-simple {
+    margin-bottom: 30px;
+}
+
+.property-simple-image {
+    @include image_hover;
+    background-color: rgba(black, .15);
+    display: block;
+    min-height: 75px;
+    position: relative;
+
+    &:before {
+        @include placeholder('\f015', 40);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.property-simple-title {
+    font-size: 15px;
+    margin: 15px 0px 0px 0px;
+
+    a {
+        color: #232323;
+    }
+}
+
+.property-simple-location {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        display: inline;
+
+        a {
+            color: #9E9E9E;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.property-simple-status {
+    color: rgba(black, .7);
+    font-size: 11px;
+    margin: 3px 0px 0px 0px;
+
+    strong.red {
+        color: map-get($red, 400);
+    }
+
+    strong.green {
+        color: map-get($green, 400);
+    }
+}

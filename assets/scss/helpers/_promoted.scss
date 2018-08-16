@@ -1,0 +1,39 @@
+.promoted {
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+
+    .promoted-inner {
+        background-color: rgba(#B3E5FC, .15);
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
+    .promoted-caption {
+        @extend .container;
+        bottom: 40px;
+        left: 50%;
+        position: absolute;
+        text-align: left;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+        h1 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 0px 1px 0px rgba(black, .5);
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 30px;
+            margin: 0px 0px 20px 0px;
+            font-weight: bold;
+            text-shadow: 0px 1px 0px rgba(black, .5);
+        }
+    }
+}

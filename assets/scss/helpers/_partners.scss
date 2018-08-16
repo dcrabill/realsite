@@ -1,0 +1,23 @@
+.partners {
+    background-color: #fff;
+    border: 1px solid map-get($grey, 100);
+    margin: 0px 0px 30px 0px;
+    padding: 16px;
+
+    &:hover {
+        .partner-item {
+            opacity: .7;
+        }
+    }
+}
+
+.partner-item {
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    transition: all .15s linear !important;
+
+    &:hover {
+        opacity: 1 !important;
+    }
+}

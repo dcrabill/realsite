@@ -1,0 +1,137 @@
+.posts {
+    @extend .clearfix;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin: 0px 0px 30px 0px;
+    padding: 16px;
+}
+
+.post {
+    @extend .clearfix;
+    border-bottom: 1px solid map-get($grey, 100);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    &:last-child {
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.post-image {
+    border: 3px solid map-get($grey, 200);
+    margin-bottom: 16px;
+
+    a {
+        display: block;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.post-body {
+    display: table-cell;
+}
+
+.post-image-left {
+    @extend .post-image;
+
+    float: left;
+    margin-right: 30px;
+    max-width: 350px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin: 0px 0px 16px 0px;
+    padding: 0px;
+
+    a {
+        color: map-get($grey, 800);
+    }
+}
+
+.post-excerpt {
+    color: map-get($grey, 700);
+    margin-bottom: 16px;
+}
+
+.post-meta {
+    @extend .clearfix;
+    margin: 0px 0px 16px 0px;
+}
+
+.post-meta-author {
+    color: map-get($grey, 700);
+    float: left;
+    font-size: 12px;
+
+    a {
+        font-weight: 600;
+    }
+}
+
+.post-meta-tags {
+    float: right;
+
+    a {
+        background-color: map-get($grey, 100);
+        border-bottom: 2px solid map-get($grey, 200);
+        color: map-get($grey, 700);
+        display: inline-block;
+        font-size: 12px;
+        margin: 0px 0px 0px 3px;
+        padding: 0px 8px;
+        transition: all .15s linear;
+
+        &:hover {
+            background-color: map-get($grey, 200);
+            text-decoration: none;
+        }
+    }
+}
+
+.post-read-more {
+    @extend .btn-simple;
+    float: right;
+}
+
+.comment {
+    list-style: none;
+    margin: 0px 0px 20px 0px;
+
+    > .comment-author {
+        border-radius: 50%;
+        float: left;
+        height: 70px;
+        margin: 0px 20px 0px 0px;
+        overflow: hidden;
+        width: 70px;
+    }
+
+    .comment-content {
+        display: table-cell;
+    }
+
+    .comment-meta {
+        margin: 0px 0px 10px 0px;
+
+        .separator {
+            color: rgba(black, .3);
+            padding: 0px 15px;
+        }
+    }
+
+    .children {
+        padding-left: 90px;
+    }
+}
+
+.form-allowed-tags {
+    background-color: map-get($grey, 200);
+    padding: 16px;
+}

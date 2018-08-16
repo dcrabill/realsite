@@ -1,0 +1,46 @@
+.header-chart {
+    margin-bottom: -30px;
+    margin-top: 60px;
+
+    #chart {
+        svg {
+            height: 300px;
+        }
+
+        .nvd3 .nv-indexLine {
+            display: none;
+        }
+
+        .nvd3 .nv-axis line {
+            stroke: rgba(white, .15);
+        }
+
+        .nvd3 .nv-axis path.domain {
+            display: none;
+        }
+
+        .nv-controlsWrap {
+            display: none;
+        }
+
+        .nvd3 .nv-groups path.nv-line {
+            stroke: #fff;
+        }
+
+        .tick text {
+            fill: rgba(white, .8);
+        }
+
+        .nvd3 .nv-axis .nv-axisMaxMin text, .nvd3 .nv-axis .nv-axisMaxMin text {
+            fill: #fff;
+        }
+
+        .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
+            stroke: map-get($color-secondary, 500);
+        }
+
+        .nv-group {
+            fill: rgba(white, .05) !important;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.property-medium {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+    padding: 16px;
+}
+
+.property-medium-image {
+    @include image_hover;
+    background-color: rgba(black, .15);
+    display: block;
+    min-height: 80px;
+    position: relative;
+
+    &:before {
+        @include placeholder('\f015', 40);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        margin-bottom: 16px;
+    }
+}
+
+.property-medium-title {
+    color: map-get($grey, 800);
+    font-size: 20px;
+    margin: 0px 0px 15px 0px;
+
+    a {
+        color: map-get($grey, 800);
+    }
+}
+
+.property-medium-content {
+    color: map-get($grey, 700);
+
+    p {
+        margin: 0px;
+    }
+}
+
+.property-medium-location {
+    list-style: none;
+    margin: -10px 0px 10px 0px;
+    padding: 0px;
+
+    li {
+        display: inline;
+
+        a {
+            color: #9E9E9E;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.property-medium-price {
+    color: map-get($color-secondary, 500);
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+
+.property-medium-meta {
+    border-top: 1px solid rgba(black, .14);
+}
+
+.property-medium-meta-item {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+
+    span, strong {
+        display: block;
+    }
+
+    span {
+        color: #9E9E9E;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: .85;
+    }
+
+    strong {
+        color: map-get($grey, 800);
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0px;
+        opacity: .85;
+    }
+}
+
+.property-medium-gallery {
+    @extend .clearfix;
+    margin-top: 15px;
+}
+
+.property-medium-gallery-item {
+    background-color: rgba(black, .15);
+    display: block;
+    float: left;
+    margin-right: 8px;
+    min-height: 30px;
+    position: relative;
+    width: 46px;
+
+    &:before {
+        @include placeholder('\f015', 16);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}

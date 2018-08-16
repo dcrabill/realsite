@@ -1,0 +1,104 @@
+.property-box {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin: 0px 0px 30px 0px;
+}
+
+.property-box-excerpt {
+    background-color: rgba(map-get($color-primary, 600), .70);
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 16px;
+    top: 0px;
+    transition: opacity .15s linear;
+    right: 0px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 3;
+}
+
+.property-box-content {
+    padding: 16px;
+}
+
+.property-box-image {
+    background-color: rgba(black, .12);
+    min-height: 150px;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        @include placeholder('\f015', 50);
+    }
+
+    img {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+    }
+
+    &:hover {
+        .property-box-excerpt {
+            opacity: 1;
+        }
+    }
+}
+
+.property-box-meta {
+    @extend .clearfix;
+}
+
+.property-box-meta-item {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+
+    span, strong {
+        display: block;
+    }
+
+    span {
+        color: #9E9E9E;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        opacity: .85;
+    }
+
+    strong {
+        color: #424242;
+        font-size: 22px;
+        font-weight: normal;
+        margin: 0px;
+        opacity: .85;
+    }
+}
+
+.property-box-bottom {
+    @extend .clearfix;
+    background-color: transparent;
+    border-top: 1px solid rgba(black, .12);
+    padding: 16px 16px;
+}
+
+.property-box-price {
+    color: map-get($color-secondary, 500);
+    font-size: 14px;
+    font-weight: 600;
+    float: left;
+}
+
+.property-box-view {
+    color: #212121;
+    float: right;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #212121;
+        text-decoration: none;
+    }
+}

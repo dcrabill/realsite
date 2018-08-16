@@ -1,0 +1,51 @@
+.property-browser {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .row {
+        &:last-child {
+            .property-preview {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        display: block;
+    }
+}
+
+.property-browser-left {
+    background-color: map-get($grey, 200);
+    border-right: 1px solid map-get($grey, 300);
+    display: table-cell;
+    padding: 30px;
+    vertical-align: top;
+    width: 360px;
+
+    strong {
+        color: map-get($grey, 500);
+        display: block;
+        font-size: 12px;
+        margin: 0px 0px 15px -15px;        
+        text-transform: uppercase;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.property-browser-right {
+    background-color: map-get($grey, 50);
+    display: table-cell;
+    padding: 30px;
+    vertical-align: top;
+
+    @media (max-width: $screen-xs-max) {
+        display: block;
+        width: 100%;
+    }
+}

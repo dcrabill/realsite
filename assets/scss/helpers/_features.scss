@@ -1,0 +1,33 @@
+.features {
+    padding-bottom: 20px;
+    padding-top: 35px;
+}
+
+.feature {
+    margin: 0px 0px 40px 0px;
+
+    h3 {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0px 0px 30px 0px;
+
+        .fa {
+            color: map-get($color-primary, 500);
+            font-size: 24px;
+            margin: 0px 10px 0px 0px;
+            vertical-align: middle;
+        }
+    }
+
+    p {
+        color: #757575;
+        font-size: 13px;
+        margin: 0px;
+    }
+}
+
+.feature-icon {
+    color: map-get($color-primary, 500);
+    font-size: 40px;
+    margin: 0px 0px 30px 0px;
+}

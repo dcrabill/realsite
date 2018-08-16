@@ -1,0 +1,60 @@
+.agent-card {
+    margin-bottom: -30px;
+    
+    h2 {
+        margin-top: 0px;
+    }
+}
+
+.agent-card-info {
+    color: map-get($grey, 700);
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            margin: 0px;
+        }
+
+        a {
+            color: map-get($color-secondary, 400);
+        }
+
+        .fa {
+            margin-right: 5px;
+        }
+    }
+}
+
+.agent-card-image {
+    background-color: rgba(black, .15);
+    display: block;
+    height: 0px;
+    padding-bottom: 100%;
+    position: relative;
+
+    &:before {
+        @include placeholder('\f007', 50);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%), translateY(-50%);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.agent-card-form {
+    .form-group {
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

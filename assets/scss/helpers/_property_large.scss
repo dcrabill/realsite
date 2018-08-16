@@ -1,0 +1,57 @@
+.property-large {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin: 0px 0px 30px 0px;
+}
+
+.property-large-image {
+    @include image_hover;
+    background-color: rgba(black, .12);
+    display: block;
+    min-height: 170px;
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+        @include placeholder('\f015', 50);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.property-large-content {
+    @extend .clearfix;
+    background-color: #fff;
+}
+
+.property-large-title {
+    float: left;
+    margin: 0px;
+    padding: 16px 0px 16px 16px;
+
+    a {
+        color: map-get($color-black, 900);
+    }
+}
+
+.property-large-link {
+    background-color: map-get($color-secondary, 600);
+    color: #fff;
+    display: block;
+    height: 54px;
+    float: right;
+    font-size: 22px;
+    line-height: 54px;
+    text-align: center;
+    transition: all .15s linear;
+    width: 54px;
+
+    &:active, &:focus, &:hover {
+        color: #fff;
+        background-color: map-get($color-secondary, 800);
+    }
+}

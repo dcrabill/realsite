@@ -1,0 +1,412 @@
+.map-wrapper {
+    position: relative;
+}
+
+.map {
+    background-color: #fff;
+    height: 500px;
+    position: relative;
+
+    .load-bar {
+        position: absolute !important;
+    }
+}
+
+.marker {
+    background-color: map-get($color-primary, 500);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 40px;
+    line-height: 32px;
+    text-align: center;
+    width: 40px;
+
+    img {
+        vertical-align: middle;
+        width: 16px;
+    }
+
+    &.pink {
+        background-color: map-get($pink, 500);
+    }
+
+    &.cyan {
+        background-color: map-get($cyan, 500);
+    }
+
+    &.blue {
+        background-color: map-get($blue, 500);
+    }
+
+    &.deep-purple {
+        background-color: map-get($deep-purple, 500);
+    }
+
+    &.indigo {
+        background-color: map-get($indigo, 500);
+    }
+
+    &.teal {
+        background-color: map-get($teal, 500);
+    }
+
+    &.green {
+        background-color: map-get($green, 500);
+    }
+
+    &.light-green {
+        background-color: map-get($light-green, 500);
+    }
+
+    &.lime {
+        background-color: map-get($lime, 500);
+    }
+
+    &.yellow {
+        background-color: map-get($yellow, 700);
+    }
+
+    &.amber {
+        background-color: map-get($amber, 500);
+    }
+
+    &.orange {
+        background-color: map-get($orange, 500);
+    }
+
+    &.deep-orange {
+        background-color: map-get($deep-orange, 500);
+    }
+
+    &.brown {
+        background-color: map-get($brown, 500);
+    }
+}
+
+.clusterer {
+    background-color: map-get($color-primary, 400);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    width: 40px;
+}
+
+.map-filter-horizontal {
+    background-color: rgba(#fff, .92);
+    border-bottom: 2px solid map-get($grey, 200);
+    border-top: 1px solid rgba(black, .05);
+    bottom: 0px;
+    left: 0px;
+    padding: 41px 0px;
+    position: absolute;
+    right: 0px;
+
+    .form-group {
+        margin-bottom: 0px;
+    }
+
+    .form-control, .bootstrap-select button.btn {
+        box-shadow: 0px 1px 0px map-get($grey, 400);
+        color: map-get($grey, 600);
+
+        @include input-placeholder {
+            color: map-get($grey, 600);
+        }
+
+        &:focus {
+            box-shadow: 0px 2px 0px map-get($color-primary, 400);
+        }
+    }
+
+    .bootstrap-select div.dropdown-menu li.selected a {
+        background-color: map-get($color-primary, 600) !important;
+    }
+
+    .bootstrap-select.open  button.btn {
+        box-shadow: 0px 2px 0px map-get($color-primary, 400) !important;
+        color: map-get($grey, 600) !important;
+    }
+}
+
+.infobox {
+    @extend .clearfix;
+    background-color: transparent;
+    height: 120px;
+    position: relative;
+    width: 420px;
+
+    .close {
+        color: map-get($grey, 800);
+        cursor: pointer;
+        height: 17px;
+        display: block;
+        font-size: 10px;
+        line-height: 17px;
+        opacity: 1;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        text-indent: 0px;
+        top: 10px;
+        transition: background-color .15s linear, color .15s linear;
+        width: 17px;
+    }
+
+    &:before {
+        border: 6px solid transparent;
+        border-right-color: map-get($color-primary, 500);
+        content: '';
+        display: block;
+        height: 0px;
+        left: -12px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0px;
+        z-index: 999;
+
+    }
+
+    &.pink:before {
+        border-right-color: map-get($pink, 500);
+    }
+
+    &.cyan:before {
+        border-right-color: map-get($cyan, 500);
+    }
+
+    &.blue:before {
+        border-right-color: map-get($blue, 500);
+    }
+
+    &.deep-purple:before {
+        border-right-color: map-get($deep-purple, 500);
+    }
+
+    &.indigo:before {
+        border-right-color: map-get($indigo, 500);
+    }
+
+    &.teal:before {
+        border-right-color: map-get($teal, 500);
+    }
+
+    &.green:before {
+        border-right-color: map-get($green, 500);
+    }
+
+    &.light-green:before {
+        border-right-color: map-get($light-green, 500);
+    }
+
+    &.lime:before {
+        border-right-color: map-get($lime, 500);
+    }
+
+    &.yellow:before {
+        border-right-color: map-get($yellow, 700);
+    }
+
+    &.orange:before {
+        border-right-color: map-get($orange, 500);
+    }
+
+    &.deep-orange:before {
+        border-right-color: map-get($deep-orange, 500);
+    }
+
+    &.indigo:before {
+        border-right-color: map-get($indigo, 500);
+    }
+
+    &.amber:before {
+        border-right-color: map-get($amber, 500);
+    }
+
+    &.brown:before {
+        border-right-color: map-get($brown, 500);
+    }
+
+    &:hover {
+        .infobox-contact {
+            margin-left: 0px;
+        }
+    }
+}
+
+.infobox-image {
+    @include image_hover;
+    background-color: rgba(black, .12);
+    border-radius: 2px 0px 0px 2px;
+    border-left: 4px solid map-get($color-primary, 500);
+    display: block;
+    float: left;
+    height: 120px;
+    margin: 0px;
+    position: relative;
+    width: 120px;
+
+    &:before {
+        @include placeholder('\f015', 24);
+    }
+
+    .orange & {
+        border-color: map-get($orange, 500);
+    }
+
+    .deep-orange & {
+        border-color: map-get($deep-orange, 500);
+    }
+
+    .brown & {
+        border-color: map-get($brown, 500);
+    }
+
+    .pink & {
+        border-color: map-get($pink, 500);
+    }
+
+    .cyan & {
+        border-color: map-get($cyan, 500);
+    }
+
+    .blue & {
+        border-color: map-get($blue, 500);
+    }
+
+    .deep-purple & {
+        border-color: map-get($deep-purple, 500);
+    }
+
+    .indigo & {
+        border-color: map-get($indigo, 500);
+    }
+
+    .teal & {
+        border-color: map-get($teal, 500);
+    }
+
+    .green & {
+        border-color: map-get($green, 500);
+    }
+
+    .light-green & {
+        border-color: map-get($light-green, 500);
+    }
+
+    .lime & {
+        border-color: map-get($lime, 500);
+    }
+
+    .yellow & {
+        border-color: map-get($yellow, 700);
+    }
+
+    .amber & {
+        border-color: map-get($amber, 500);
+    }
+
+    .orange & {
+        border-color: map-get($orange, 500);
+    }
+
+    .deep-orange & {
+        border-color: map-get($deep-orange, 500);
+    }
+
+    .brown & {
+        border-color: map-get($brown, 500);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.infobox-content {
+    background-color: #fff;
+    height: 120px;
+    float: left;
+    padding: 8px;
+    position: relative;
+    width: 160px;
+    z-index: 2;
+}
+
+.infobox-content-title {
+    color: map-get($grey, 800);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+        color: map-get($grey, 800);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.infobox-content-body {
+    color: map-get($grey, 700);
+    font-size: 11px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+.infobox-content-price {
+    color: map-get($color-secondary, 400);
+    font-size: 14px;
+    font-weight: 600;
+    margin: -5px 0px 2px 0px;
+}
+
+.infobox-contact {
+    background-color: map-get($grey, 200);
+    height: 120px;
+    float:left;
+    padding: 8px;
+    position: relative;
+    margin-left: -140px;
+    transition: margin .2s linear;
+    width: 140px;
+    z-index: 1;
+}
+
+.infobox-contact-title {
+    color: map-get($grey, 800);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+        color: map-get($grey, 800);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.infobox-contact-body {
+    color: map-get($grey, 700);
+
+    .fa {
+        color: map-get($grey, 900);
+        margin: 0px 5px 0px 0px;
+        vertical-align: middle;
+    }
+}
+
+#map-admin {
+    @media (max-width: $screen-xs-max) {
+        height: 400px !important;
+    }
+}

@@ -1,0 +1,75 @@
+.header-topbar {
+    @extend .clearfix;
+    background-color: map-get($color-primary, 800);
+    color: map-get($color-primary, 50);
+    padding: 3px 0px;
+}
+
+.header-topbar-left {
+    float: left;
+
+    @media (max-width: $screen-xs-max) {
+        float: none;
+    }
+}
+
+.header-topbar-right {
+    float: right;
+
+    @media (max-width: $screen-xs-max) {
+        border-top: 1px solid rgba(#fff, .20);
+        float: none;
+        margin-top: 8px;
+        padding-top: 8px;
+    }
+}
+
+.header-topbar-social {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+        display: inline;
+        list-style: none;
+        margin: 0px 0px 0px 10px;
+        padding: 0px;
+
+        a {
+            color: map-get($color-primary, 100);
+            font-size: 15px;
+            vertical-align: middle;
+
+            &:hover {
+                color: map-get($color-primary, 50);
+            }
+        }
+    }
+}
+
+.header-topbar-links {
+    display: inline;
+
+    li {
+        display: inline;
+        padding-left: 10px;
+        vertical-align: middle;
+
+        &:first-child {
+            padding-left: 0px;
+        }
+        
+        img {
+            margin: -2px 5px 0px 0px;
+            vertical-align: middle;
+        }
+
+        a {
+            color: map-get($color-primary, 50);
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

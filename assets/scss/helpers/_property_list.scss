@@ -1,0 +1,27 @@
+.property-list {
+    margin: 0px 0px 30px 0px;
+    dl {
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    dt {
+        color: map-get($grey, 700);
+        float: left;
+        font-weight: normal;
+        line-height: 36px;
+    }
+
+    dd {
+        border-bottom: 1px solid map-get($grey, 200);
+        color: map-get($grey, 800);
+        font-weight: 600;
+        line-height: 36px;
+        text-align: right;
+
+        &:last-child {
+            border-bottom: 0px;
+        }
+    }
+}

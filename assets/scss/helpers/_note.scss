@@ -1,0 +1,65 @@
+.notes {
+    margin-bottom: -30px;
+}
+
+.note {
+    background-color: map-get($red, 400);
+    height: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 100%;
+    position: relative;
+
+    strong, span {
+        color: #fff;
+        display: block;
+    }
+
+    strong {
+        color: #fff;
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &.red-light {
+        background-color: map-get($red, 50);
+
+        strong, span {
+            color: map-get($red, 500);
+        }
+    }
+
+    &.blue {
+        background-color: map-get($blue, 500);
+
+    }
+
+    &.blue-light {
+        background-color: map-get($blue, 50);
+
+        strong, span {
+            color: map-get($blue, 500);
+        }
+    }
+
+    &.white {
+        background-color: #fff;
+
+        strong, span {
+            color: map-get($grey, 700);
+        }
+    }
+}
+
+.note-inner {
+    left: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,174 @@
+.footer {
+    background-color: map-get($color-primary, 600);
+    display: table-row;
+    height: 1px;
+
+    &.footer-simple {
+        background-color: #fff;
+    }
+
+    .widget {
+        margin-bottom: 0px;
+
+        h2 {
+            border-bottom: 1px solid rgba(white, .20);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0px -30px 15px 0px;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+
+            @media (max-width: $screen-xs-max) {
+                margin-top: 20px;
+            }
+        }
+
+        &:last-child {
+            h2 {
+                margin-right: 0px;
+            }
+        }
+
+        .sharing-buttons {
+            li {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.footer-simple .widget h2 {
+    border-bottom: 1px solid rgba(black, .05);
+    color: map-get($grey, 800);
+}
+
+.footer-top {
+    .nav-pills {
+        li {
+            margin: 0px;
+
+            &:first-child {
+                a {
+                    padding-left: 0px;
+                }
+            }
+
+            a {
+                color: map-get($color-primary, 200);
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: color .15s linear;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #fff;
+                }
+
+                &:active, &:focus {
+                    background-color: transparent;
+                }
+            }
+
+            @media (max-width: $screen-xs-max) {
+                float: none;
+
+                a {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    .nav-stacked {
+        li {
+            margin: 0px;
+
+            a {
+                border-bottom: 1px solid transparent;
+                display: inline-block;
+                color: map-get($color-primary, 50);
+                padding: 8px 0px;
+                transition: all .15s linear;
+
+                .footer-simple & {
+                    color: map-get($grey, 700);
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+
+                    .footer-simple & {
+                        border-bottom: 1px solid map-get($grey, 200);
+                        color: map-get($grey, 800);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-top-inner {
+    border-bottom: 1px solid rgba(white, .20);
+    padding: 25px 0px;
+
+    .footer-simple & {
+        border-bottom: 1px solid rgba(black, .05);
+    }
+}
+
+.footer-bottom {
+    color: #fff;
+    padding: 25px 0px;
+
+    .footer-simple & {
+        color: map-get($grey, 800);
+    }
+
+    a {
+        color: #fff;
+
+        .footer-simple & {
+            color: map-get($color-secondary, 400);
+        }
+    }
+}
+
+.footer-bottom-left {
+    float: left;
+
+    @media (max-width: $screen-xs-max) {
+        float: none;
+    }
+}
+
+.footer-bottom-right {
+    float: right;
+
+    @media (max-width: $screen-xs-max) {
+        border-top: 1px solid rgba(#fff, .20);
+        float: none;
+        margin-top: 30px;
+        padding-top: 30px;
+
+        .footer-simple & {
+            border-top-color: map-get($grey, 100);
+        }
+    }
+}
+
+.footer-bar {
+    background-color: map-get($color-primary, 700);
+    color: #fff;
+    padding-bottom: 7px;
+    padding-top: 7px;
+
+    .scroll-top {
+        color: #fff;
+        cursor: pointer;
+        font-size: 40px;
+    }
+}

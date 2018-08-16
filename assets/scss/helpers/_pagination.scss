@@ -1,0 +1,40 @@
+.pagination {
+    margin: 0px 0px 30px 0px;
+
+    li {
+        &:first-child, &:last-child {
+            a {
+                border-radius: 0px;
+            }
+        }
+
+        &.active {
+            a {
+                background-color: transparent;
+                border-color: map-get($color-secondary, 400);
+                color: map-get($grey, 800);
+                font-weight: 600;
+
+                &:hover {
+                    background-color: transparent;
+                    border-color: map-get($color-secondary, 400);
+                    color: map-get($grey, 800);
+                }
+            }
+        }
+
+        a {
+            background-color: transparent;
+            border: 0px;
+            border-top: 3px solid map-get($grey, 300);
+            color: map-get($grey, 700);
+            font-size: 15px;
+            padding: 14px 18px;
+            transition: all .15s linear;
+
+            &:hover {
+                color: map-get($grey, 700);
+            }
+        }
+    }
+}

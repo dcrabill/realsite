@@ -1,0 +1,104 @@
+.agent-row {
+    background-color: map-get($grey, 100);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-xs-max) {
+        background-color: #fff;
+    }
+
+    .row {
+        display: table;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+
+        > div {
+            display: table-cell;
+            float: none;
+            vertical-align: top;
+
+            @media (max-width: $screen-xs-max) {
+                display: block;
+            }
+        }
+    }
+}
+
+.agent-row-image {
+    background-color: #fff;
+    padding: 16px;
+
+    img {
+        border-radius: 50%;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.agent-row-image-inner {
+    a {
+        background-color: rgba(black, .15);
+        border-radius: 50%;
+        display: block;
+        height: 0px;
+        padding-bottom: 100%;
+        position: relative;
+
+        &:before {
+            @include placeholder('\f007', 50);
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateX(-50%), translateY(-50%);
+        }
+    }
+}
+
+.agent-row-content {
+    background-color: #fff;
+
+    p {
+        color: map-get($grey, 700);
+    }
+}
+
+.agent-row-title {
+    a {
+        color: map-get($grey, 800);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.agent-row-subtitle {
+    color: map-get($grey, 700);
+    font-size: 15px;
+}
+
+.agent-row-info {
+    padding: 16px;
+
+    ul {
+        color: map-get($grey, 800);
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        .fa {
+            color: map-get($grey, 700);
+            margin: 0px 5px 0px 0px;
+        }
+
+        li {
+            margin: 0px;
+        }
+
+        a {
+            color: map-get($color-secondary, 400);
+        }
+    }
+}

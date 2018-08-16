@@ -1,0 +1,138 @@
+.property-table {
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+
+    thead {
+        th {
+            background-color: map-get($color-primary, 400);
+            color: #fff;
+            padding: 6px 12px;
+
+            @media (max-width: $screen-xs-max) {
+                padding: 6px;
+            }            
+        }
+    }
+
+    tbody {
+        td {
+            vertical-align: middle;
+            padding: 12px;
+
+            @media (max-width: $screen-xs-max) {
+                padding: 6px;
+            }
+        }
+
+        tr:nth-child(odd) {
+            td {
+                background-color: map-get($grey, 100);
+            }
+        }
+
+        tr:nth-child(even) {
+            td {
+                background-color: map-get($grey, 50);
+            }
+        }
+    }
+}
+
+.property-table-info-image {
+    @include image_hover;
+    background-color: rgba(black, .15);
+    display: block;
+    float: left;
+    height: 80px;
+    margin: 0px 16px 0px 0px;
+    position: relative;
+    width: 120px;
+
+    @media (max-width: $screen-xs-max) {
+        height: 60px;
+        width: 90px;
+    }
+
+    &:before {
+        @include placeholder('\f015', 24);
+    }
+
+    img {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+.property-table-info-content {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        clear: both;
+        padding-top: 20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        clear: both;
+        padding-top: 20px;
+    }
+}
+
+.property-table-info-content-title {
+    color: map-get($grey, 800);
+    font-size: 18px;
+    margin: 0px;
+
+    a {
+        color: map-get($grey, 800);
+    }
+
+    @media (max-width: $screen-xs-max) {
+        font-size: 13px;
+    }    
+}
+
+.property-table-info-content-price {
+    color: map-get($color-secondary, 500);
+    font-size: 15px;
+    font-weight: 600;
+
+    @media (max-width: $screen-xs-max) {
+        font-size: 13px;
+    }        
+}
+
+.property-table-info-content-location {
+    list-style: none;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+
+    li {
+        display: inline;
+
+        a {
+            color: #9E9E9E;
+            font-size: 11px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.property-table-beds, .property-table-baths {
+    color: map-get($color-black, 600);
+    font-size: 16px;
+    text-align: center;
+
+    @media (max-width: $screen-xs-max) {
+        font-size: 13px;
+    }        
+}
+
+.property-table-contract, .property-table-type {
+    color: map-get($color-black, 600);
+    font-size: 16px;
+
+    @media (max-width: $screen-xs-max) {
+        font-size: 13px;
+    }        
+}
